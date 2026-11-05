@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Paraguay Destino Natural</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- ===== ENCABEZADO ===== -->
     <header>
+        <img src="imagenes/foto-portada.png" alt="Escudo de Paraguay" class="logo-escudo">
         <h1>Paraguay Destino Natural</h1>
         <p>Descubrí la esencia del turismo en el corazón de Sudamérica</p>
     </header>
 
-    <!-- ===== NAVEGACIÓN ===== -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -23,7 +23,6 @@
         </ul>
     </nav>
 
-    <!-- ===== CONTENIDO PRINCIPAL ===== -->
     <main>
         <section id="datos-contacto">
             <h2>Ponete en contacto</h2>
@@ -49,36 +48,42 @@
         </aside>
 
         <div>
+            <h2>Formulario de Consulta</h2>
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Taylor" minlength="2" maxlength="50" autocomplete="given-name" required>
+
                 <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej: Swift" minlength="2" maxlength="50" autocomplete="family-name" required>
+
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
+
                 <label for="numero">Número de teléfono:</label>
-                <input type="tel" id="numero" name="numero" required>
+                <input type="tel" id="numero" name="numero" placeholder="Ej: +595 981 123456" pattern="[0-9+\s]+" required>
+
                 <label for="destino">Destino de interés:</label>
-                <select id="destino" name="destino" multiple>
+                <select id="destino" name="destino" required>
+                    <option value="" disabled selected>Seleccione un destino</option>
                     <option value="iguazu">Cataratas del Iguazú</option>
                     <option value="encarnacion">Encarnación y las Ruinas Jesuíticas</option>
                     <option value="chaco">Chaco Paraguayo</option>
                     <option value="asuncion">Asunción y alrededores</option>
                 </select>
+
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar mensaje</button>
-                <button type="reset">Limpiar formulario</button>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba aquí su consulta..." minlength="10" maxlength="500" required></textarea>
+
+                <button type="submit" class="boton-formulario">Enviar mensaje</button>
+                <button type="reset" class="boton-formulario">Limpiar formulario</button>
             </form>            
         </div>
-
     </main>
 
-    <!-- ===== PIE DE PÁGINA ===== -->
     <footer>
         <p>&copy; 2026 Paraguay Destino Natural - Turismo con esencia</p>
         <p><a href="mailto:info@paraguaydestino.com.py">info@paraguaydestino.com.py</a></p>
-        <p><a href="#datos-contacto">Volver arriba</a></p>
+        <p><a href="#">Volver arriba</a></p>
     </footer>
 </body>
 </html>
