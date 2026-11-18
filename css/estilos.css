@@ -1,13 +1,15 @@
+/* 1. Variables y paleta de colores */
 :root {
     --main-color: #2E7D32;
     --secondary-color: #F9A825;
     --text-color: #333;
     --light-text: #ffffff;
-    --main-background: #f5f5f0;
+    --main-background: rgb(245, 245, 240);
     --block-background: #ffffff;
     --shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* 2. Estilos generales y tipografía */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
@@ -18,6 +20,7 @@ body {
     padding: 0;
 }
 
+/* 3. Encabezado y navegación */
 h1, h2, h3 {
     font-family: 'Georgia', serif;
     color: var(--main-color);
@@ -127,6 +130,7 @@ main {
     box-shadow: var(--shadow);
 }
 
+/* 4. Sección de bienvenida */
 #bienvenida {
     background-image: url('../imagenes/cerro-cora.jpg');
     background-repeat: no-repeat;
@@ -157,6 +161,7 @@ main {
     text-align: center;
 }
 
+/* 5. Tablas y listas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -200,6 +205,7 @@ main ul li {
     margin-bottom: 8px;
 }
 
+/* 6. Formularios */
 form {
     background-color: var(--block-background);
     padding: 20px;
@@ -243,6 +249,7 @@ input, select, textarea {
     color: var(--main-color);
 }
 
+/* 7. Pie de página */
 footer {
     background-color: #1a1a1a;
     color: var(--light-text);
