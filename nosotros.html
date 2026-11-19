@@ -45,26 +45,72 @@
 
         <section>
             <h2>El Equipo</h2>
-            <article>
-                <h3>Camila Cameron</h3>
-                <p>Fundadora y guía principal. Apasionada por la historia y la naturaleza.</p>
-            </article>
-            <article>
-                <h3>Kevin Doerksen</h3>
-                <p>Especialista en turismo de aventura y fotografía de naturaleza.</p>
-            </article>
-            <article>
-                <h3>Pablo Morales</h3>
-                <p>Responsable de relaciones con comunidades y artesanos locales.</p>
-            </article>
-            <article>
-                <h3>Diego Fleytas</h3>
-                <p>Encargado de logística y coordinación de itinerarios turísticos.</p>
-            </article>
-            <article>
-                <h3>Eder Gimenez</h3>
-                <p>Desarrollador web y responsable de la plataforma digital.</p>
-            </article>
+
+            <table>
+                <caption>Conocé a nuestro equipo de expertos en turismo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Especialidad</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Camila Cameron</td>
+                        <td>Fundadora y guía principal</td>
+                        <td>Historia y naturaleza</td>
+                    </tr>
+                    <tr>
+                        <td>Eder Gimenez</td>
+                        <td>Especialista en turismo de aventura</td>
+                        <td>Fotografía de naturaleza</td>
+                    </tr>
+                    <tr>
+                        <td>Pablo Morales</td>
+                        <td>Relaciones comunitarias</td>
+                        <td>Comunidades y artesanos</td>
+                    </tr>
+                    <tr>
+                        <td>Diego Fleytas</td>
+                        <td>Coordinación logística</td>
+                        <td>Itinerarios turísticos</td>
+                    </tr>
+                    <tr>
+                        <td>Kevin Doerksen</td>
+                        <td>Desarrollador web</td>
+                        <td>Plataforma digital</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>¿Te gustaría formar parte del equipo?</h2>
+            <p>¡Únete a nuestro equipo de profesionales apasionados por el turismo en Paraguay!</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan" minlength="2" maxlength="50" autocomplete="given-name" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej: Perez" minlength="2" maxlength="50" autocomplete="family-name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
+
+                <label for="numero">Número de teléfono:</label>
+                <input type="tel" id="numero" name="numero" placeholder="Ej: +595 981 123456" pattern="[0-9+\s]+" required>
+
+                <label for="descripcion">Cuentanos algo sobre ti:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Escriba aquí su descripción..." minlength="10" maxlength="500" required></textarea>
+
+                <label for="archivo">Adjunta tu CV (opcional):</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx">
+
+                <button type="submit" class="boton-formulario">Solicitar una entrevista</button>
+                <button type="reset" class="boton-formulario">Limpiar formulario</button>
+            </form> 
         </section>
 
         <aside>
