@@ -14,9 +14,5 @@
 - resenas
 - servicios
 
-# Descripcion
-## Tabla
-En nuestro trabajo utlizabamos las tablas para ordenar la informacion necesaria acerca de los destinos que ofrecemos, junto tambien con una breve descripcion de los mismos, su ubicacion y imagen. 
-
-## Formulario
-Para esta parte de la realizacion del proyecto incorporamos un formulario que el usuario debera completar para que nosotros podamos comunicarnos con el sobre sus dudas.
+# Enlace de la presentacion final
+- https://youtu.be/6GMA6JgiCh0
