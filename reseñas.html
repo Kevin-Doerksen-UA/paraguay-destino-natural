@@ -61,7 +61,38 @@
 
         <aside>
             <h2>¿Querés compartir tu experiencia?</h2>
-            <p>Si ya viajaste con nosotros, <a href="contacto.html">contanos tu historia</a> y ayudanos a inspirar a otros viajeros.</p>
+            <p>Si ya viajaste con nosotros, contanos tu historia y ayudanos a inspirar a otros viajeros.</p>
+
+            <div>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan" minlength="2" maxlength="50" autocomplete="given-name" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ej: Perez" minlength="2" maxlength="50" autocomplete="family-name" required>
+
+                    <label for="destino">Donde viajaste:</label>
+                    <select id="destino" name="destino" required>
+                        <option value="" disabled selected>Seleccione un destino</option>
+                        <option value="iguazu">Cataratas del Iguazú</option>
+                        <option value="encarnacion">Encarnación y las Ruinas Jesuíticas</option>
+                        <option value="chaco">Chaco Paraguayo</option>
+                        <option value="asuncion">Asunción y alrededores</option>
+                    </select>
+
+                    <label for="mensaje">Reseñas:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escriba aquí su reseña..." minlength="10" maxlength="500" required></textarea>
+
+                    <label for="email">Correo electrónico o Número de teléfono:</label>
+                    <small>Por favor, introduce al menos uno para permitirnos verificar la reseña.</small>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email">
+                    <input type="tel" id="numero" name="numero" placeholder="Ej: +595 981 123456" pattern="[0-9+\s]+">
+                    <!-- Currently neither email nor phone number is required; this functionality would be implemented using JavaScript validation -->
+
+                    <button type="submit" class="boton-formulario">Enviar reseña</button>
+                    <button type="reset" class="boton-formulario">Limpiar formulario</button>
+                </form>            
+            </div>
         </aside>
     </main>
 
